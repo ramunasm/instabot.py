@@ -1,14 +1,14 @@
 ## InstaBot
-Instagram bot. It works without instagram api, need only login and password. Write on python.
+Instagram bot. It works without instagram API, the script only needs your account login and password. Writen in python.
 
-After Instagram [close api][1] (new review process), there were some problem, to make auto - like, comment and follow.
+After Instagram [closed the api][1] (new review process), there were some problem, to make auto - like, comment and follow bots.
 
-If your app can't pass new review process, this is solution!
+If your app can't pass new review process, this is the solution!
 
-This InstaBot work by [https://www.instagram.com][2] and need only your login and password.
+This InstaBot works by using [https://www.instagram.com][2] website and only needs your login and password.
 ## Usage
 ####1) Login:
-Login automatic, when you create `InstaBot` class element:
+Login is automatic, when you create `InstaBot` class element:
 ```python
 bot = InstaBot('login', 'password',
                like_per_day=1000,
@@ -19,9 +19,9 @@ bot = InstaBot('login', 'password',
                log_mod = 0)
 ```
 ####2) Set likes and unlike:
-How many likes set bot in one day. Default value is 1000 likes per 24 hours.
-If you make more than 1000 likes in day - instagram can ban you. Usually this bot use 24/7 and this is way to set 1000 like in day evenly. If you want more likes in one moment with auto_mod() - set this parameter to 5000 or 10000 or more. Formula: set like with delay - `(24 hour * 60 minute * 60 second / like_per_day)`
-######Be careful, don't set more than 1000 like in day!
+How many likes does the bot give in one day. Default value is 1000 likes per 24 hours.
+If use more than 1000 likes in a single day day - instagram can ban you. Usually this bot is ran 24/7 and is set to spread out the 1000 likes evenly throughout the day. If you want more likes - you can use auto_mod() - set this parameter to 5000 or 10000 or more. Delay formula is: `(24 hour * 60 minute * 60 second / like_per_day)`
+######Be careful, don't set more than 1000 like in one day!
 ```python
 like_per_day=1000
 ```
