@@ -1,7 +1,7 @@
 ## InstaBot
-Instagram bot. It works without instagram API, the script only needs your account login and password. Writen in python.
+Instagram bot. It works without using instagram API, the script only needs your account login and password. It's writen in Python.
 
-After Instagram [closed the api][1] (new review process), there were some problem, to make auto - like, comment and follow bots.
+After Instagram [closed the api][1] (new review process), there were some problems with auto - liking, commenting and following bots.
 
 If your app can't pass new review process, this is the solution!
 
@@ -19,14 +19,14 @@ bot = InstaBot('login', 'password',
                log_mod = 0)
 ```
 ####2) Set likes and unlike:
-How many likes does the bot give in one day. Default value is 1000 likes per 24 hours.
+Limit of likes in one day. Default value is 1000 likes per 24 hours.
 If use more than 1000 likes in a single day day - instagram can ban you. Usually this bot is ran 24/7 and is set to spread out the 1000 likes evenly throughout the day. If you want more likes - you can use auto_mod() - set this parameter to 5000 or 10000 or more. Delay formula is: `(24 hour * 60 minute * 60 second / like_per_day)`
 ######Be careful, don't set more than 1000 like in one day!
 ```python
 like_per_day=1000
 ```
-Don't like media (photo or video) if it have more than `media_max_like` likes. `media_max_like = 0` will ignore this property. If media have too much likes - your like have not feedback.
-Don't like media (photo or video) if it have less than `media_min_like` likes. `media_min_like = 0` will ignore this property.
+Don't like media (photo or video) if it has more than `media_max_like` likes. `media_max_like = 0` will ignore this property. If media has too much likes - your like will not get the desired effect.
+Don't like media (photo or video) if it has less than `media_min_like` likes. `media_min_like = 0` will ignore this property.
 ```python
 media_max_like=10
 media_min_like=0
@@ -131,14 +131,17 @@ Instagram account
 4) Add the code to the end of the file (like in usage examples), depending on how you want to use bot.
 
 5) Run program `python3 instabot.py` or `python instabot.py` on MAC and Linux, or `python instabot.py` on Windows.
-## Test on:
+## Tested on:
 Windows & Python 3.4
 
 CentOS & Python 3.4
 
 CentOS & Python 2.6
+
+Mac OS X & Python 2.7
+
 ## Warning!
-The entire responsibility for the use of bot programs entirely on you.
+The entire responsibility for the use of bot is entirely on you.
 #### What i see every time open instagram:
 ![What i see every time open instagram](http://cs627124.vk.me/v627124268/35d95/rSponlVRclY.jpg)
 
